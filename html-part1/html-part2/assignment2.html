@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Basic Form</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Your Details:</legend>
+			Name: <input name="name" type="text"/><br>
+			Email: <input name="emails" type="text"/>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Your Review:</legend>
+			How did you hear about us? 
+			<select name="selectinputs">
+				<optgroup>
+					<option>Google</option>
+					<option>Emails</option>
+				</optgroup>
+			</select>	
+			<br> 
+			Would you visit again? <br>
+			<input type="radio" name="answer"/>Yes
+			<input type="radio" name="answer"/>No
+			<input type="radio" name="answer">Maybe
+			<br>
+			<br>
+			Comments: <br>
+			<textarea name="comments" rows="5" and cols="50"></textarea>
+			<br><br>
+			<input type="checkbox" name="signme" checked> Sign me up for email updates <br>
+			<input type="submit" name="submit" value="Submit review">
+		</fieldset>
+	</form>
+</body>
+</html>
