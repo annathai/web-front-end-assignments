@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session 7 - Assignment 1: create like-unlike-line button </title>
+    <style>
+        .likeButtonClass {
+            background-color: lightskyblue;
+            color: white;
+            border: 5px solid orange;
+            width: 100px;
+            height: 40px;
+        }
+        .unlikeButtonClass {
+            background-color: coral;
+            color: white;
+            border: 5px solid orange;
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="likeButton" class="likeButtonClass" onclick="handleButton()">Like</button>
+    <script>
+        function handleButton() {
+            var text = document.getElementById("likeButton").innerHTML;
+            console.log(text);
+            if(text === "Like") {
+                document.getElementById("likeButton").innerHTML = "Unlike";
+                document.getElementById("likeButton").setAttribute("class", "unlikeButtonClass")
+            }
+            else {
+                document.getElementById("likeButton").innerHTML = "Like";
+                document.getElementById("likeButton").setAttribute("class", "likeButtonClass")
+            }
+        }
+    </script>
+</body>
+</html>
